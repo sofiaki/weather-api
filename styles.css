@@ -1,0 +1,66 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: rgb(252, 233, 251);
+}
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+  background-color: rgb(51, 122, 189);
+}
+input,
+select {
+  border: none;
+  height: 2em;
+  background-color: rgb(245, 235, 244);
+  border-radius: 5px;
+  line-height: 2rem;
+  margin: 10px 0;
+  padding: 0px 1.2rem;
+  font-size: 0.9em;
+  font-family: "Roboto", sans-serif;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 80%;
+  color: aliceblue;
+  height: 3rem;
+  width: fit-content;
+  word-wrap: break-word;
+  line-height: 3rem;
+  padding: 1.3px 1rem;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.container {
+  margin: 50px;
+}
+.weather {
+  display: grid;
+  justify-items: center;
+}
+.loading {
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+  animation: loading 2s;
+}
+.loading img {
+  width: inherit;
+  height: inherit;
+}
+@keyframes loading {
+  from {
+    display: none;
+    opacity: 0.1;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
